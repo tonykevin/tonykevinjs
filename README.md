@@ -1,0 +1,3 @@
+# JS
+
+Learning Javascript' syntax.
