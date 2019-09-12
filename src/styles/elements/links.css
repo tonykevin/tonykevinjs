@@ -1,0 +1,18 @@
+/* ------------------------------------ *\
+  #LINKS
+\* ------------------------------------ */
+
+/**
+ * Default styles for simple hyperlinks.
+ */
+
+a {
+  color: var(--color-midnight);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+    transition: var(--global-transition);
+  }
+}

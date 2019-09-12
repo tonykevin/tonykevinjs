@@ -1,0 +1,11 @@
+/* ------------------------------------ *\
+  #CUSTOM MEDIA QUERIES
+\* ------------------------------------ */
+
+/* Define aliases for each breakpoints */
+
+@custom-media --SMALL (min-width: 50em);
+
+@custom-media --medium (min-width: 64em);
+
+@custom-media --large (min-width: 80em);

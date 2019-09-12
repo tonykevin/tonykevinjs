@@ -1,10 +1,17 @@
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 const { HotModuleReplacementPlugin } = require('webpack')
 
-const { app, examples, favicon, homepage } = require('../../paths')
+const {
+  app,
+  examples,
+  favicon,
+  homepage,
+  images,
+  postcssConfig,
+  styles
+} = require('../../paths')
 
 module.exports = {
   mode: 'development',
@@ -12,7 +19,9 @@ module.exports = {
   entry: './',
   resolve: {
     alias: {
-      '@app': app
+      '@app': app,
+      '@images': images,
+      '@styles': styles
     }
   },
   module: {
@@ -20,6 +29,28 @@ module.exports = {
       test: /\.js$/,
       use: 'babel-loader',
       exclude: /node_modules/
+    }, {
+      test: /\.css$/,
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1
+          }
+        },
+        {
+          loader: 'postcss-loader',
+          options: {
+            config: {
+              path: postcssConfig
+            }
+          }
+        }
+      ]
+    }, {
+      test: /\.(png|jpg|gif|svg)$/,
+      use: 'file-loader'
     }]
   },
   devServer: {

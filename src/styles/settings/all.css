@@ -1,0 +1,14 @@
+/* ------------------------------------ *\
+  # SETTINGS
+\* ------------------------------------ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Define global variables.
+ * Colors...............Manage our color palette in isolation.
+ */
+
+@import 'global';
+@import 'colors';
