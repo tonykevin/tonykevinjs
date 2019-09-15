@@ -54,6 +54,9 @@ module.exports = {
         }
       ]
     }, {
+      test: /\.pug$/,
+      use: 'pug-loader'
+    }, {
       test: /\.(png|jpg|gif|svg)$/,
       use: [
         {
