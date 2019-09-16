@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
+const packages = require('../../../package.json')
+
 const {
   app,
   examples,
@@ -13,7 +15,7 @@ const {
   styles
 } = require('../../paths')
 
-const publicPath = '/'
+const publicPath = packages.homepage || '/'
 
 module.exports = {
   mode: 'production',
