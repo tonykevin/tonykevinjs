@@ -25,7 +25,6 @@
 
   &__logo {
     align-self: center;
-    border-radius: 3%;
     grid-area: L;
   }
 

@@ -20,6 +20,9 @@
  * Links................Hyperlink styles.
  * Page.................Page-level styles (HTML element).
  *
+ * OBJECTS
+ * Rounded corner ......Add rounded corners to a box or image.
+ *
  * COMPONENTS
  * Page-header..........Page header styles.
  */
@@ -34,5 +37,7 @@
 @import 'elements/images';
 @import 'elements/links';
 @import 'elements/page';
+
+@import 'objects/rounded-corner';
 
 @import 'components/page-header';
