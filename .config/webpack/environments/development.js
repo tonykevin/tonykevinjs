@@ -68,6 +68,7 @@ module.exports = {
     new HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       favicon,
+      publicPath: '/',
       template: homepage
     })
   ]

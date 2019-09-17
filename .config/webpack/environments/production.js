@@ -92,6 +92,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       favicon,
+      publicPath,
       template: homepage
     }),
     new MiniCssExtractPlugin({

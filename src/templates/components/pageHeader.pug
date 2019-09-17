@@ -1,7 +1,9 @@
 //- Page header
+- let { publicPath } = htmlWebpackPlugin.options
+- if (!publicPath) publicPath = '/'
 
 header.c-page-header
-  a(href='/', title="home")
+  a(href=`${publicPath}`, title='home')
     img.c-page-header__logo(
       src=require('@images/javascript.svg'),
       alt='Javascript logo')
@@ -11,4 +13,4 @@ header.c-page-header
     |
     a.c-page-header__link(
       href='//tonykevin.com',
-      title="tonykevin.com") Tony kevin
+      title='tonykevin.com') Tony kevin
