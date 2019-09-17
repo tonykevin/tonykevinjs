@@ -19,6 +19,9 @@
  * Images...............Base image styles.
  * Links................Hyperlink styles.
  * Page.................Page-level styles (HTML element).
+ *
+ * COMPONENTS
+ * Page-header..........Page header styles.
  */
 
 @import 'settings/all';
@@ -31,3 +34,5 @@
 @import 'elements/images';
 @import 'elements/links';
 @import 'elements/page';
+
+@import 'components/page-header';

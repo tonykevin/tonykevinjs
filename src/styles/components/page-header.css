@@ -1,0 +1,43 @@
+/* ------------------------------------ *\
+  # PAGE-HEADER
+\* ------------------------------------ */
+
+.c-page-header {
+  background-color: gainsboro;
+  box-shadow: 0 0.2em 0.2em -0.3em rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-gap: 0 0.7rem;
+  grid-template-areas:
+    'L T'
+    'L A';
+  grid-template-columns: 4rem auto;
+  grid-template-rows: 2rem 2rem;
+  padding: 0.7rem 1rem;
+
+  &__author {
+    font-style: italic;
+    grid-area: A;
+  }
+
+  &__logo {
+    align-self: center;
+    border-radius: 3%;
+    grid-area: L;
+  }
+
+  &__link {
+    text-decoration: underline;
+    transition: var(--global-transition);
+
+    &:hover {
+      text-shadow: 1px 1px 2px rgba(0, 20, 39, 0.3);
+      transition: var(--global-transition);
+    }
+  }
+
+  &__title {
+    align-self: flex-end;
+    grid-area: T;
+    margin: 0;
+  }
+}
