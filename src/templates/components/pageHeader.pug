@@ -3,14 +3,14 @@
 - if (!publicPath) publicPath = '/'
 
 header.c-page-header
-  a(href=`${publicPath}`, title='home')
+  a.c-page-header__logo(href=`${publicPath}`, title='home')
     img(
       alt='Javascript logo',
-      class='o-rounded-corner c-page-header__logo'
+      class='c-page-header__scalable-image',
       src=require('@images/javascript.svg')
     )
   h2.c-page-header__title Learning Javascript
-  .c-page-header__author
+  span.c-page-header__author
     | by
     |
     a.c-page-header__link(

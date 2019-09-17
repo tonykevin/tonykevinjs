@@ -23,8 +23,12 @@
     grid-area: A;
   }
 
+  &__scalable-image {
+    border-radius: 3%;
+    width: 100vw;
+  }
+
   &__logo {
-    align-self: center;
     grid-area: L;
   }
 
