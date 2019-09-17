@@ -6,13 +6,17 @@
   background-color: gainsboro;
   box-shadow: 0 0.2em 0.2em -0.3em rgba(0, 0, 0, 0.5);
   display: grid;
-  grid-gap: 0 0.7rem;
+  grid-gap: 0 0.7em;
   grid-template-areas:
     'L T'
     'L A';
-  grid-template-columns: 4rem auto;
-  grid-template-rows: 2rem 2rem;
-  padding: 0.7rem 1rem;
+  grid-template-columns: 4em auto;
+  grid-template-rows: 2em 2em;
+  padding: 0.7em 1em;
+
+  @media (--large) {
+    font-size: 1.2rem;
+  }
 
   &__author {
     font-style: italic;
