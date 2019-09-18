@@ -22,6 +22,7 @@
  *
  * OBJECTS
  - Rounded corner ......Add rounded corners to a box or image.
+ * Wrappers.............Wrappers and page constraints.
  *
  * COMPONENTS
  * Page-header..........Page header styles.
@@ -37,5 +38,7 @@
 @import 'elements/images';
 @import 'elements/links';
 @import 'elements/page';
+
+@import 'objects/wrappers';
 
 @import 'components/page-header';
