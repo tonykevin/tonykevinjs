@@ -5,7 +5,8 @@
 .c-page-header {
   background-color: gainsboro;
   box-shadow: 0 0.2em 0.2em -0.3em rgba(0, 0, 0, 0.5);
-  padding: 0.7em 1em;
+  padding-bottom: 0.7em;
+  padding-top: 0.7em;
 
   @media (--large) {
     font-size: 1.2rem;
@@ -20,7 +21,7 @@
       'L T'
       'L A';
     grid-template-columns: 4em auto;
-    grid-template-rows: 2em 2em;
+    grid-template-rows: repeat(2, 1fr);
   }
 
     &__author {
@@ -34,6 +35,7 @@
     }
 
     &__logo {
+      align-self: center;
       grid-area: L;
     }
 
