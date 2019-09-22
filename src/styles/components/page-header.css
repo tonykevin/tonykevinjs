@@ -15,16 +15,18 @@
   &-container {
     @extend .o-wrapper;
 
+    align-items: center;
     display: grid;
     grid-gap: 0 0.7em;
     grid-template-areas:
       'L T'
       'L A';
     grid-template-columns: 4em auto;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
   }
 
     &__author {
+      align-self: flex-start;
       font-style: italic;
       grid-area: A;
     }
@@ -50,7 +52,6 @@
     }
 
     &__title {
-      align-self: flex-end;
       grid-area: T;
       margin: 0;
     }
