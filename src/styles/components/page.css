@@ -1,0 +1,16 @@
+/* ------------------------------------ *\
+  #PAGE
+\* ------------------------------------ */
+
+.c-page {
+  @extend .o-wrapper;
+
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  &__title {
+    border-bottom: 1px solid rgba(77, 77, 77, 0.3);
+    margin-top: 0;
+    padding-bottom: 0.05em;
+  }
+}

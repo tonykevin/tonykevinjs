@@ -25,6 +25,7 @@
  * Wrappers.............Wrappers and page constraints.
  *
  * COMPONENTS
+ * Page.................Main page styles.
  * Page-header..........Page header styles.
  */
 
@@ -41,4 +42,5 @@
 
 @import 'objects/wrappers';
 
+@import 'components/page';
 @import 'components/page-header';
