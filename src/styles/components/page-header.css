@@ -3,56 +3,16 @@
 \* ------------------------------------ */
 
 .c-page-header {
-  background-color: gainsboro;
+  background-color: var(--color-page-header-bg);
   box-shadow: 0 0.2em 0.2em -0.3em rgba(0, 0, 0, 0.5);
-  padding-bottom: 0.7em;
-  padding-top: 0.7em;
-
-  @media (--large) {
-    font-size: 1.2rem;
-  }
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 
   &-container {
     @extend .o-wrapper;
-
-    align-items: center;
-    display: grid;
-    grid-gap: 0 0.7em;
-    grid-template-areas:
-      'L T'
-      'L A';
-    grid-template-columns: 4em auto;
-    grid-template-rows: repeat(2, auto);
   }
 
-    &__author {
-      align-self: flex-start;
-      font-style: italic;
-      grid-area: A;
-    }
-
-    &__scalable-image {
-      border-radius: 3%;
-      width: 100vw;
-    }
-
-    &__logo {
-      align-self: center;
-      grid-area: L;
-    }
-
-    &__link {
-      text-decoration: underline;
-      transition: var(--global-transition);
-
-      &:hover {
-        text-shadow: 1px 1px 2px rgba(0, 20, 39, 0.3);
-        transition: var(--global-transition);
-      }
-    }
-
-    &__title {
-      grid-area: T;
-      margin: 0;
-    }
+  &__imagotipo {
+    width: 11em;
+  }
 }
