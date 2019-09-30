@@ -10,9 +10,18 @@
 
   &-container {
     @extend .o-wrapper;
+
+    align-items: center;
+    display: flex;
   }
 
   &__imagotipo {
     width: 11em;
+  }
+
+  &__link-image {
+    @extend .o-link-image;
+
+    --color-link-image-hover: var(--color-black-squeeze--t50);
   }
 }

@@ -5,9 +5,11 @@
 :root {
   --color-big-stone: #19313d;
   --color-black-squeeze: #e9f1f7;
+  --color-black-squeeze--t50: rgba(233, 241, 247, 0.5);
   --color-midnight: #001427;
   --color-ripe-lemon: #ffd400;
   --color-tundora: #4d4d4d;
 
   --color-page-header-bg: var(--color-big-stone);
+  --color-link-image-hover: #fff;
 }

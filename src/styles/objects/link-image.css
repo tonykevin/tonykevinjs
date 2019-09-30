@@ -1,0 +1,14 @@
+/* ------------------------------------ *\
+  #Link image
+\* ------------------------------------ */
+
+.o-link-image {
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0.3em 0.3em -0.3em var(--color-link-image-hover);
+    transition: box-shadow var(--global-transition);
+  }
+}

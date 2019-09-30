@@ -17,10 +17,11 @@
  *
  * ELEMENTS
  * Images...............Base image styles.
- * Links................Hyperlink styles.
+ - Links................Hyperlink styles.
  * Page.................Page-level styles (HTML element).
  *
  * OBJECTS
+ * Link-image...........Styles for a link image(focus, hover, etc.).
  - Rounded corner ......Add rounded corners to a box or image.
  * Wrappers.............Wrappers and page constraints.
  *
@@ -37,9 +38,9 @@
 @import 'generic/reset';
 
 @import 'elements/images';
-@import 'elements/links';
 @import 'elements/page';
 
+@import 'objects/link-image';
 @import 'objects/wrappers';
 
 @import 'components/page';
