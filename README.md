@@ -1,3 +1,7 @@
-# JS
+# TonykevinJS
 
-Learning Javascript' syntax.
+Application to learn and do magic with Javascript.
+
+## License
+
+MIT
