@@ -1,10 +1,10 @@
 {
-  "name": "js",
-  "version": "0.1.0",
+  "name": "tonykevinjs",
+  "version": "0.2.0",
   "description": "Learning Javascript' syntax.",
   "main": "src",
-  "homepage": "//tonykevin.github.io/js/",
-  "repository": "git@github.com:tonykevin/js.git",
+  "homepage": "//tonykevin.github.io/tonykevinjs/",
+  "repository": "git@github.com:tonykevin/tonykevinjs.git",
   "author": "tonykevin <h@tonykevin.com>",
   "license": "MIT",
   "scripts": {
