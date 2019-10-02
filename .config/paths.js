@@ -10,7 +10,7 @@ module.exports = {
   app: resolveApp('src'),
   examples: resolveApp('examples'),
   favicon: resolveApp('src/images/favicon/tonykevinjs.png'),
-  homepage: resolveApp('src/templates/index.pug'),
+  homepage: resolveApp('src/views/pages/index.pug'),
   images: resolveApp('src/images'),
   styles: resolveApp('src/styles/main.css'),
   postcssConfig: resolveApp('.config/postcss/')
