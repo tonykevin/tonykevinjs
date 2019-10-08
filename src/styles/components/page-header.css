@@ -8,6 +8,11 @@
   padding-bottom: 1rem;
   padding-top: 1rem;
 
+  @media (--medium) {
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
   &-container {
     @extend .o-wrapper;
 
