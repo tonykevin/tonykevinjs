@@ -13,6 +13,7 @@
  *
  * GENERIC
  * Box-sizing...........Better default 'box-sizing'.
+ * Code.................highlight the syntax code(js, css, etc.).
  * Reset................A pared back reset to remove margins.
  *
  * ELEMENTS
@@ -21,6 +22,7 @@
  * Page.................Page-level styles (HTML element).
  *
  * OBJECTS
+ * Code.................styles for the code container.
  * Link-image...........Styles for a link image(focus, hover, etc.).
  - Rounded corner ......Add rounded corners to a box or image.
  * Wrappers.............Wrappers and page constraints.
@@ -36,10 +38,12 @@
 
 @import 'generic/box-sizing';
 @import 'generic/reset';
+@import 'generic/code';
 
 @import 'elements/images';
 @import 'elements/page';
 
+@import 'objects/code';
 @import 'objects/link-image';
 @import 'objects/wrappers';
 

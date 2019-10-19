@@ -1,0 +1,19 @@
+/* ------------------------------------ *\
+  #Code
+\* ------------------------------------ */
+
+.o-code {
+  &,
+  &--inline {
+    @extend .hljs;
+  }
+
+  padding-left: 1em;
+  padding-right: 1em;
+
+  &--inline {
+    border-radius: 7%;
+    display: inline-flex;
+    padding: 0.1em 0.2em;
+  }
+}

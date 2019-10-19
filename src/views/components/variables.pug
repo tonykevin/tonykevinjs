@@ -2,24 +2,23 @@ h2 Variables
 
 p
   | There are multiple options to define a variable, its choice depends on
-  | its <em>scope</em>. The limits of a variable are generally defined by
-  | curly brackets i.e. <code>{}</code>; otherwise, they are
+  | its #[em scope ]. The limits of a variable are generally defined by
+  | curly brackets i.e. #[code.o-code--inline {}]; otherwise, they are
   | <em>global</em>. The following code consolidates the idea:
 
 pre
-  code
-    | const star = 'sun'
-    |
-    | function country () {
-    |   var hills = true
-    |
-    |   if (hills) {
-    |     let animal = 'bear'
-    |   }
-    | }
+  code.o-code
+    :highlight(lang="javascript")
+      const star = 'sun'
+      function country () {
+        var hills = true
+        if (hills) {
+          let animal = 'bear'
+        }
+      }
 
 p
-  | Additionally, features such as: are <em>hoisted</em> (interprets the
+  | Additionally, features such as: are #[em hoisted] (interprets the
   | declaration at the top level of the scope and ignores the declaration
   | point) or creates properties when the declaration is in the global
   | scope, will determine which variables to use.
