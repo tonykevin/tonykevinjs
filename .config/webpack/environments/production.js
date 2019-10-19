@@ -92,6 +92,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       favicon,
+      minify: {
+        collapseWhitespace: true
+      },
       publicPath,
       template: homepage
     }),
