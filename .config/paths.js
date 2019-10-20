@@ -9,7 +9,7 @@ function resolveApp (relativePath) {
 module.exports = {
   app: resolveApp('src'),
   examples: resolveApp('examples'),
-  favicon: resolveApp('src/images/favicon/tonykevinjs.png'),
+  favicon: resolveApp('src/images/favicon/favicon.png'),
   homepage: resolveApp('src/views/pages/index.pug'),
   images: resolveApp('src/images'),
   styles: resolveApp('src/styles/main.css'),
