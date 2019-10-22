@@ -22,3 +22,27 @@ p
   | declaration at the top level of the scope and ignores the declaration
   | point) or creates properties when the declaration is in the global
   | scope, will determine which variables to use.
+
+h3 Var
+
+p
+  | It is defined with the keyword
+  | #[code.o-code--inline #[span.hljs-keyword var]], initialization is
+  | #[em optional], by default it is assigned
+  | #[code.o-code--inline #[span.hljs-literal undefined]] and its scope is
+  | delimited by a #[a(href='#') function].
+
+pre
+  code.o-code
+    :highlight(lang='javascript')
+      function getCampingTools (place) {
+        var backpack = 'food, sunglasses, tent, '
+
+        if (place === 'mountain') {
+          backpack += 'coat, helmet, rope'
+        }
+
+        return backpack
+      }
+h3 Let
+h3 Const
