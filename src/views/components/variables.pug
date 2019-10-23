@@ -32,10 +32,17 @@ p
   | #[code.o-code--inline #[span.hljs-literal undefined]] and its scope is
   | delimited by a #[a(href='#') function].
 
+p
+  | In the following example, the variable
+  | #[code.o-code--inline backpack] is declared and initialized, this instance
+  | is available within the entire
+  | #[code.o-code--inline #[span.hljs-title setCampingTools]] function and even
+  | within the internal blocks.
+
 pre
   code.o-code
     :highlight(lang='javascript')
-      function getCampingTools (place) {
+      function setCampingTools (place) {
         var backpack = 'food, sunglasses, tent, '
 
         if (place === 'mountain') {
